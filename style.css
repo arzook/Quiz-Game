@@ -66,13 +66,13 @@ padding-bottom: 15px;                     /* The CSS padding-bottom property set
     transition: all 0.3s;
 }
 
-.btn:hover:not([disabled]){
+.btn:hover:not([disabled]){              /* the hover effect will work when the button is not disabled, when the button is disabled the hover effect will not work */
 
     background: #222;                  /* The CSS background property are used to set the background color */
     color: #fff;                       /* The CSS color property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value */
 }
 
-.btn:disabled{
+.btn:disabled{                           /* set the btn disabled so the cursor become red  (can't click on any answer button) */
 
     cursor: no-drop;                      /* The CSS cursor property of allows you to specify the type of cursor that should be displayed to the user */
 }
