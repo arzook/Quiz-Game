@@ -1,0 +1,102 @@
+*{
+    margin: 0;                             /* The CSS margin properties are used to create space around elements, outside of any defined borders */
+    padding: 0;                            /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders */
+    font-family: 'poppins', sans-serif;    /* The CSS font-family properties are used to set the font style */
+    box-sizing: border-box;                /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height */
+
+}
+
+body{
+
+    background: #001e4d;                /* The CSS background property are used to set the background color */
+    
+}
+
+.app{
+    background: #fff;                   /* The CSS background property are used to set the background color */
+    width: 90%;                           /* The CSS height and width properties are used to set the height and width of an element */
+    max-width: 600px;                     /* The CSS max-width property is used to set the maximum width of an element */
+    margin: 100px auto 0;                 /* You can set the margin property to auto to horizontally center the element within its container */
+    border-radius: 10px;                  /* The CSS border-radius property is used to add rounded borders to an element */
+    padding: 30px;                        /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders */
+}
+
+.app h1{
+font-size: 25px;                          /* The CSS font-size property sets the size of the text */
+color: #001e4d;                         /* The CSS color property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value */
+font-weight: 600;                         /* The CSS font-weight property sets the weight (or boldness) of the font */
+border-bottom: 1px solid #333;          /* The CSS border-bottom property defines the width, line style, and color of the bottom border of a box */
+padding-bottom: 15px;                     /* The CSS padding-bottom property sets the height of the padding area on the bottom of an element */
+
+}
+
+.quiz {
+
+    padding: 20px 0;    /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders */ 
+}
+                 
+
+.quiz h2{
+    
+    font-size: 18px;                     /* The CSS font-size property sets the size of the text */
+    color: #001e4d;                    /* The CSS color property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value */
+    font-weight: 600;                    /* The CSS font-weight property sets the weight (or boldness) of the font */
+  
+}
+
+#question{
+
+    padding-top: 10px;                  /* The CSS padding-top property sets the top padding (space) of an element */
+    font-size: 17px;                    /* The CSS font-size property sets the size of the text */
+
+}
+
+.btn{
+
+    background: #fff;                 /* The CSS background property are used to set the background color */
+    color: #222;                      /* The CSS color property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value */
+    font-weight: 500;                   /* The CSS font-weight property sets the weight (or boldness) of the font */
+    width: 100%;                        /* The CSS height and width properties are used to set the height and width of an element */
+    border: 1px solid #222;           /* The CSS border properties allow you to specify the style, width, and color of an element's border */
+    padding: 10px;                      /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders */ 
+    margin: 10px 0;                     /* The CSS margin properties are used to create space around elements, outside of any defined borders */
+    text-align: left;
+    border-radius: 4px;                 /* The CSS border-radius property is used to add rounded borders to an element */
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]){
+
+    background: #222;                  /* The CSS background property are used to set the background color */
+    color: #fff;                       /* The CSS color property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value */
+}
+
+.btn:disabled{
+
+    cursor: no-drop;                      /* The CSS cursor property of allows you to specify the type of cursor that should be displayed to the user */
+}
+
+#next-btn{
+
+background-color: #001e4d;
+color: #fff;                            /* The CSS color property sets the foreground color value of an element's text and text decorations, and sets the currentcolor value */
+font-weight: 500;                         /* The CSS font-weight property sets the weight (or boldness) of the font */
+width: 150px;                             /* The CSS height and width properties are used to set the height and width of an element */
+border: 0;                                /* The CSS border properties allow you to specify the style, width, and color of an element's border */
+padding: 10px;                            /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders */ 
+margin: 20px auto 0;                      /* The CSS margin properties are used to create space around elements, outside of any defined borders */
+border-radius: 4px;                       /* The CSS border-radius property is used to add rounded borders to an element */
+cursor: pointer;                          /* The CSS cursor property of allows you to specify the type of cursor that should be displayed to the user */
+display: none;                            /* The CSS The display property is the most important CSS property for controlling layout */
+
+}
+
+.correct {
+background: #51df8e;                     /* The CSS background property are used to set the background color */
+}
+
+.incorrect {
+    background: #f45f5f;                 /* The CSS background property are used to set the background color */
+    
+    }
