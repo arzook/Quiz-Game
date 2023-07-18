@@ -4,7 +4,7 @@ const questions = [                                                   /* const i
         answers:[                                                     /* Setting the options to the qustions */
              { text:"Shark", correct: false},                         /* Setting the answers to the qustions */
              { text:"Blue Whale", correct: true},
-             { text:"Elephant", correct: false},
+             { text:"Elephant", correct: false}, 
              { text:"Giraffe", correct: false},
     
                ]
@@ -98,52 +98,52 @@ const isCorrect = selectedBtn.dataset.correct === "true";            /* It will 
 if (isCorrect){
 
     selectedBtn.classList.add("correct");                            /* If the dataset id true then it will add the class name correct */
-score++;
+    score++;                                                         /* It will increase the score by 1 */
 } else {
     selectedBtn.classList.add("incorrect");                          /* If the dataset id true then it will add the class name incorrect */
 
 }
 
-Array.from(answerButtons.children).forEach(button => {
-if (button.dataset.correct === "true"){
-button.classList.add("correct");
+Array.from(answerButtons.children).forEach(button => {               /* Added Array from (answerButtons.children).forEach ,so for each button it will check the dataset */
+if (button.dataset.correct === "true"){                              /* If it is true then it will the class name correct */
+button.classList.add("correct");                                    
 }
-button.disabled = "block";
+button.disabled = "block";                                           /* It will disable the button (other answer) */
 });
 
-nextButton.style.display = "block";
+nextButton.style.display = "block";                                  /* It will display the Next button, so that we can go to the Next question */
 
 }
 
 function showScore(){
 
-resetState();
-questionElement.innerHTML = "You scored " + score + " out of " + questions.length +" !";
-nextButton.innerHTML = "Play Again";
-nextButton.style.display = "block";
+resetState();                                                        /* To display the score we have to call the resetState() function */
+questionElement.innerHTML = "You scored " + score + " out of " + questions.length +" !";   /* It will display the score */
+nextButton.innerHTML = "Play Again";                                                       /* It will give Play Again option to start the quiz again */
+nextButton.style.display = "block";                                  /* It will display the Next button, so that we can go to the Next question */
 
 }
 
-function handleNextButton(){
-currentQuestionIndex++;
-if (currentQuestionIndex < questions.length){
+function handleNextButton(){                                         /* Here defining a function handleNextButton to start the quiz again */
+currentQuestionIndex++;                                              /* It will increase the question index by 1 */
+if (currentQuestionIndex < questions.length){                        /* If the current question index is less than question length (question number) */
 
-    showQuestion();
+    showQuestion();                                                  /* It will show the question */
 }else{
 
-    showScore();
+    showScore();                                                     /* It will show the score */
 }
 
 }
 
-nextButton.addEventListener("click", ()=>{
+nextButton.addEventListener("click", ()=>{                           /* The addEventListener() method attaches an event handler to an element */
 
-    if(currentQuestionIndex <  questions.length){
-handleNextButton();
+    if(currentQuestionIndex < questions.length){                     /* It will check the current index of question, if the currentQuestionIndex is less than length of the questions */
+handleNextButton();                                                  /* If there no more questions so it will start the quiz again */
         }else{
-                startQuiz();
+                startQuiz();                                         /* Here calling a function startQuiz to start the quiz */
 
         }
 }) ;
 
-    startQuiz();
+    startQuiz();                                                     /* Here calling a function startQuiz to start the quiz */
